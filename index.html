@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Click Me</title>
+</head>
+<body>
+
+<button onclick="playVideo()">Click Me</button>
+<p id="message"></p>
+
+<script>
+function playVideo() {
+  var video = document.createElement('video');
+  video.src = 'uhoh.mp4';
+  video.controls = true;
+  document.body.appendChild(video);
+  document.getElementById("message").innerHTML = "When clicked, do not worry, nothing you see is real lol";
+}
+</script>
+
+</body>
+</html>
